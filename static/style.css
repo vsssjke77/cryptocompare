@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+#coinSelect {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.prices-table {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ecf0f1;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+.coin-name {
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: left;
+}
+
+/* Стили для ячеек с ценами */
+.price-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Стили для спредов */
+.spread {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.spread.green {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.spread.red {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.spread.gray {
+    background-color: #e9ecef;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+}
+
+.status {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.status p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    .spread {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+}
+/* Добавьте эти стили в существующий CSS */
+
+.status {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.status p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+#userCoins {
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+/* Добавьте эти стили */
+
+.clear-btn {
+    background-color: #e74c3c !important;
+}
+
+.clear-btn:hover {
+    background-color: #c0392b !important;
+}
+
+.remove-btn {
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background-color: #7f8c8d;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
